@@ -1,0 +1,15 @@
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/bin/Debug/net10.0/Aula 3.1
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/bin/Debug/net10.0/Aula 3.1.deps.json
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/bin/Debug/net10.0/Aula 3.1.runtimeconfig.json
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/bin/Debug/net10.0/Aula 3.1.dll
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/bin/Debug/net10.0/Aula 3.1.pdb
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.GeneratedMSBuildEditorConfig.editorconfig
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.AssemblyInfoInputs.cache
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.AssemblyInfo.cs
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.csproj.CoreCompileInputs.cache
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.sourcelink.json
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.dll
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/refint/Aula 3.1.dll
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.pdb
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/Aula 3.1.genruntimeconfig.cache
+/home/lusca/Documentos/VscodeProjects/SCTecDotnet/Aula 3.1/obj/Debug/net10.0/ref/Aula 3.1.dll
