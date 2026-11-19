@@ -133,6 +133,43 @@ namespace Aula04_api.Migrations
                     b.ToTable("Contas");
                 });
 
+            modelBuilder.Entity("Emprestimo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DataSolicitacao")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DataVencimento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Prazo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<decimal>("TaxaJuros")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<decimal>("Valor")
+                        .HasPrecision(12, 2)
+                        .HasColumnType("decimal(12,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.ToTable("Emprestimos");
+                });
+
             modelBuilder.Entity("Transacao", b =>
                 {
                     b.Property<int>("Id")
@@ -179,6 +216,17 @@ namespace Aula04_api.Migrations
                         .IsRequired();
 
                     b.Navigation("Agencia");
+
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("Emprestimo", b =>
+                {
+                    b.HasOne("Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Cliente");
                 });

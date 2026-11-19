@@ -5,10 +5,11 @@ public class BancoContext : DbContext
     {
     }
 
-    public DbSet<Cliente> Clientes { get; set; } = null;
-    public DbSet<Agencia> Agencias { get; set; } = null;
-    public DbSet<Conta> Contas { get; set; } = null;
-    public DbSet<Transacao> Transacoes { get; set; } = null;
+    public DbSet<Cliente> Clientes { get; set; } = null!;
+    public DbSet<Agencia> Agencias { get; set; } = null!;
+    public DbSet<Conta> Contas { get; set; } = null!;
+    public DbSet<Transacao> Transacoes { get; set; } = null!;
+    public DbSet<Emprestimo> Emprestimos { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder mb)
     {
@@ -17,7 +18,9 @@ public class BancoContext : DbContext
         mb.Entity<Conta>().Property(c => c.Saldo).HasPrecision(12, 2);
         mb.Entity<Conta>().HasIndex(c => c.Numero).IsUnique();
         mb.Entity<Conta>().HasOne(c => c.Cliente).WithMany(c => c.Contas).HasForeignKey(c => c.ClienteId);
-        mb.Entity<Transacao>().Property(c => c.Valor).HasPrecision(12, 2);
+        mb.Entity<Transacao>().Property(t => t.Valor).HasPrecision(12, 2);
+        mb.Entity<Emprestimo>().Property(e => e.Valor).HasPrecision(12, 2);
+        mb.Entity<Emprestimo>().Property(e => e.TaxaJuros).HasPrecision(10, 2);
         mb.Entity<Agencia>().HasData(
             new Agencia { Id = 1, Nome = "Centro", Cidade = "Campo Grande"},
             new Agencia { Id = 2, Nome = "Moreninhas", Cidade = "Campo Grande"}
